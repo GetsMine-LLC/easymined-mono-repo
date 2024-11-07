@@ -22,7 +22,7 @@ const KnowledgeBase: FC<IKnowledgeBaseProps> = ({ data, query, dataBySlug }) => 
 		<LayoutKnowledgeBase data={data} itemBySlug={!!dataBySlug} query={query}>
 			<Head>
 				<title>{dataBySlug.title}</title>
-				<meta name="description" content="GetsMine Knowelage Base" />
+				<meta name="description" content="EasyMined Knowledge Base" />
 			</Head>
 			{dataBySlug ? (
 				<Container data={dataBySlug} />

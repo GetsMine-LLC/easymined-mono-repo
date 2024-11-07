@@ -12,14 +12,14 @@ export const CloseIcon: React.FC<React.SVGProps<SVGSVGElement>> = ({ className, 
 	>
 		<path
 			d="M16.9949 5.5L5.99487 16.5"
-			stroke={stroke || '#297FE4'}
+			stroke={stroke || '#ff8a00'}
 			stroke-width="2"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
 		<path
 			d="M5.99487 5.5L16.9949 16.5"
-			stroke={stroke || '#297FE4'}
+			stroke={stroke || '#ff8a00'}
 			stroke-width="2"
 			stroke-linecap="round"
 			stroke-linejoin="round"

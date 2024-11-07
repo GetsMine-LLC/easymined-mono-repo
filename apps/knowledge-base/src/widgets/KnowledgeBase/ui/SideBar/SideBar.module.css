@@ -88,7 +88,7 @@
 		max-height: none;
 		min-width: auto;
 		max-width: none;
-		height: 100vh;
+		/* height: 100vh; */
 		border-radius: 0;
 		padding: 10px;
 	}
