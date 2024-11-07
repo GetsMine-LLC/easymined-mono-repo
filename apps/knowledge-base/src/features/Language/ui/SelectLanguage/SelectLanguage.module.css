@@ -1,0 +1,129 @@
+.wrapper {
+	position: relative;
+	z-index: 2;
+}
+
+.summary {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	-webkit-touch-callout: none;
+	/* iOS Safari */
+	-webkit-user-select: none;
+	/* Safari */
+	-khtml-user-select: none;
+	/* Konqueror HTML */
+	-moz-user-select: none;
+	/* Old versions of Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer/Edge */
+	color: white;
+	user-select: none;
+}
+
+.flag img {
+	width: 21px;
+	height: 17px;
+	object-fit: cover;
+}
+.detals {
+	position: absolute;
+	right: 0;
+	top: calc(100% + 8px);
+	z-index: 1;
+	width: 220px;
+	border-radius: 4px;
+	padding: 12px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: var(--callout-light-hex);
+	animation: opacityMenu 0.2s;
+}
+
+.detalsMobile {
+	position: absolute;
+	right: 50%;
+	transform: translateX(50%);
+	top: calc(100% + 8px);
+	z-index: 1;
+	width: 220px;
+	border-radius: 4px;
+	padding: 12px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: var(--callout-light-hex);
+	animation: opacityMenu 0.2s;
+	box-shadow: 0px 0px 5px #ccc;
+}
+.base {
+	position: absolute;
+	right: -40px;
+	transform: translateX(50%);
+	top: calc(100% + 8px);
+	z-index: 1;
+	width: 220px;
+	border-radius: 4px;
+	padding: 12px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: var(--callout-light-hex);
+	animation: opacityMenu 0.2s;
+	box-shadow: 0px 0px 5px #ccc;
+}
+.detalsReverse {
+	position: absolute;
+	left: 0;
+	bottom: calc(100% + 8px);
+	z-index: 1;
+	width: 220px;
+	border-radius: 4px;
+	padding: 12px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: var(--callout-light-hex);
+	animation: opacityMenu 0.2s;
+	box-shadow: 0px 0px 5px #ccc;
+}
+
+:global(.body-rtl) .detals {
+	right: auto;
+	left: 0;
+}
+
+:global(.body-rtl) .detalsReverse {
+	left: auto;
+	right: 0;
+}
+
+.item {
+	width: 100%;
+	padding: 5px 12px;
+	transition: var(--transition);
+	color: black;
+	text-decoration: none;
+}
+
+.item:hover {
+	background-color: #e1e5eb;
+}
+
+@media screen and (max-width: 420px) {
+	.detalsMobile {
+		right: 10%;
+	}
+}
+
+@keyframes opacityMenu {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,37 @@
+.wrapper {
+    background-color: var(--callout-light-hex);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.info {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: calc(20px * -0.06);
+}
+
+.link {
+    color: var(--primary-hex);
+    transition: var(--transition);
+}
+
+.link:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 736px) {
+    .wrapper {
+        width: 100%;
+        height: auto;
+        padding-bottom: 24px;
+    }
+
+    .info {
+        line-height: 24px;
+    }
+
+    .link {
+        text-decoration: none;
+    }
+}

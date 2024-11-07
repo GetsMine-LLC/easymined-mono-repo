@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "scripts": {
+    "-----builds-----": "",
+    "build:customer": "turbo build --filter=./apps/customer",
+    "build:news": "turbo build --global-deps=.env --filter=./packages/shared --filter=./apps/news",
+    "build:io-aue": "turbo build --global-deps=.env --filter=./packages/shared --filter=./apps/io-aue",
+    "build:io-he": "turbo build --global-deps=.env --filter=./packages/shared --filter=./apps/io-he",
+    "build:knowledge-base": "turbo build --global-deps=.env --filter=./packages/shared --filter=./apps/knowledge-base",
+    "build": "turbo build --concurrency=8 ",
+    "-----dev-----": "",
+    "dev": "turbo run dev --ui=tui",
+    "dev:news": "turbo run dev --filter=news",
+    "dev:io-aue": "turbo run dev --filter=io-aue",
+    "dev:io-global": "turbo run dev --filter=io-global",
+    "dev:io-he": "turbo run dev --filter=io-he",
+    "dev:customer": "turbo run dev --filter=./packages/shared --filter=./apps/customer",
+    "dev:knowledge-base": "turbo run dev --filter=knowledge-base",
+    "-----production-----": "",
+    "start:news": "turbo run start --filter=./apps/news",
+    "start:customer": "turbo run start --filter=./apps/customer",
+    "start:io-aue": "turbo run start --filter=./apps/io-aue",
+    "start:io-he": "turbo run start --filter=./apps/io-he",
+    "start:knowledge-base": "turbo run start --filter=./apps/knowledge-base",
+    "start": "turbo run start",
+    "-----utils-----": "",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "eslint": "^9.12.0",
+    "prettier": "^3.3.3",
+    "turbo": "^2.1.3"
+  },
+  "packageManager": "pnpm@8.15.6",
+  "name": "getsmine-frontend-mono-repo"
+}

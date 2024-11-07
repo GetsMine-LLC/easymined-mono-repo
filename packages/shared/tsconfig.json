@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "composite": false,
+    "declaration": true,
+    "declarationDir": "./types",
+    "declarationMap": true,
+    "esModuleInterop": false,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "noUncheckedIndexedAccess": true,
+    "preserveWatchOutput": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",
+    "lib": [
+      "ES2015",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "ESNext",
+    "target": "es5"
+  },
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules"
+  ]
+}

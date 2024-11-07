@@ -1,0 +1,73 @@
+@import './reset.css';
+:root {
+	--primary-hex: #ff8a00;
+	--white: #fff;
+	--white-rgb: 255, 255, 255;
+	--black: #131314;
+	--black-light: #1d1e23;
+	--primary-light-hex: #e5f3ff;
+	--primary-rgb: 255, 138, 3;
+	--primary-gray: #f8f6f6;
+	--outline-hex: #e2e9f4;
+	--callout-hex: #eaf0f4;
+	--callout-light-hex: #1d1e23;
+	--error-hex: #ca3535;
+	--dark-blue: #20375350;
+	--watcher-bg-hex: #435fff;
+
+	--transition: 200ms;
+}
+
+/* @font-face {
+	font-family: 'DM Sans';
+	src: url('/fonts/DM_Sans/DMSans-Regular.ttf');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DM Sans';
+	src: url('/fonts/DM_Sans/DMSans-Medium.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DM Sans';
+	src: url('/fonts/DM_Sans/DMSans-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+} */
+
+/* * {
+	font-family: DM Sans;
+} */
+
+.disable-title {
+	color: #cdd7e4;
+}
+
+/* .body-en {
+	font-family: Open Sans;
+}
+
+.body-ru {
+	font-family: Open Sans;
+}
+
+.body-he {
+	font-family: Open Sans;
+} */
+
+body {
+	background: #131314;
+	color: var(--white);
+}
+
+.body-ltr {
+	direction: ltr;
+}
+
+.body-rtl {
+	direction: rtl;
+}

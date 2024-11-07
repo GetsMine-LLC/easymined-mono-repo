@@ -1,0 +1,98 @@
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.menu {
+	border-radius: 30px;
+	min-width: 320px;
+	max-width: 320px;
+	/* box-shadow: 0 1px 25.5px 4px rgba(179, 183, 204, 0.21); */
+	width: 100%;
+	background-color: var(--black-light);
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.titleItem {
+	cursor: pointer;
+}
+.buttonWrapper {
+	padding: 18px;
+	max-width: 520px;
+}
+.iconWrapper {
+	min-width: 30px;
+	min-height: 30px;
+}
+.topBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	gap: 30px;
+}
+.topBar p {
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: -0.06rem;
+	font-size: 16px;
+}
+.icon {
+	width: 24px;
+	height: 24px;
+	transform: rotate(90deg);
+	transition: var(--transition);
+}
+.icon path {
+	stroke-opacity: 1;
+}
+.active {
+	transform: rotate(270deg);
+}
+.mobileContainer {
+	display: none;
+}
+.sidebarThemes {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+@media (max-width: 1285px) {
+	.menu {
+		width: 100%;
+		min-width: auto;
+		max-width: none;
+	}
+	.buttonWrapper {
+		display: none;
+	}
+}
+@media (max-width: 800px) {
+	.mobileContainer {
+		display: block;
+	}
+
+	.buttonWrapper {
+		display: none;
+	}
+	.topBar p {
+		font-size: 20px;
+	}
+	.menu {
+		box-shadow: none;
+		width: 100%;
+		max-height: none;
+		min-width: auto;
+		max-width: none;
+		height: 100vh;
+		border-radius: 0;
+		padding: 10px;
+	}
+	.sidebar {
+		width: 100%;
+	}
+}

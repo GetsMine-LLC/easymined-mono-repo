@@ -1,0 +1,35 @@
+{
+	"extends": ["next/core-web-vitals", "eslint:recommended", "plugin:@typescript-eslint/recommended"],
+	"parser": "@typescript-eslint/parser",
+	"plugins": ["import", "@typescript-eslint"],
+	"root": true,
+	"rules": {
+		"import/order": [
+			"error",
+			{
+				"groups": [["external", "builtin"], ["parent", "type", "index"], "sibling", "unknown"],
+				"newlines-between": "always",
+				"pathGroups": [
+					{
+						"pattern": "@/**",
+						"group": "index"
+					}
+				]
+			}
+		],
+		"@typescript-eslint/ban-ts-comment": "off",
+		"no-mixed-spaces-and-tabs": 0,
+		"no-console": ["warn", { "allow": ["error"] }],
+		"@typescript-eslint/no-non-null-assertion": "off",
+		"@typescript-eslint/no-unused-vars": ["warn", { "ignoreRestSiblings": true, "varsIgnorePattern": "^_" }],
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/no-var-requires": "off",
+		// "import/no-internal-modules": [
+		// 	"error",
+		// 	{
+		// 		"forbid": ["@/features/**/*", "@/entities/**/*", "@/shared/**/*", "@/widgets/**/*"]
+		// 	}
+		// ],
+		"react-hooks/exhaustive-deps": "off"
+	}
+}

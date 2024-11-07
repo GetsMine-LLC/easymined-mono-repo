@@ -1,0 +1,138 @@
+.inputWrapper {
+	display: block;
+}
+
+.inputToggle {
+	position: relative;
+}
+
+.input {
+	width: 100%;
+	border: none;
+	background-color: var(--callout-light-hex);
+	outline-style: solid;
+	outline-color: transparent;
+	transition: var(--transition);
+	line-height: 120%;
+}
+
+.additionalPlaceholder {
+	position: absolute;
+	right: 12px;
+	top: 14px;
+	color: var(--dark-blue);
+	font-size: 12px;
+	line-height: 120%;
+	letter-spacing: -0.06em;
+}
+
+.input:focus {
+	outline-color: var(--primary-hex);
+	background-color: white;
+}
+
+.label {
+	display: block;
+	font-size: 14px;
+	line-height: 120%;
+	letter-spacing: -0.84px;
+	margin-bottom: 8px;
+}
+
+.inputError {
+	background-color: var(--callout-light-hex);
+	outline-color: var(--error-hex) !important;
+}
+
+.inputError::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: var(--error-hex);
+	opacity: 1;
+	/* Firefox */
+}
+
+.inputError:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: var(--error-hex);
+}
+
+.inputError::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: var(--error-hex);
+}
+
+.error {
+	color: #ff859b;
+	line-height: 120%;
+	font-size: 14px;
+	margin-top: 4px;
+	/* padding: 0px 20px; */
+}
+
+/* variants */
+.inputGray {
+	background-color: var(--callout-light-hex);
+	outline-color: transparent;
+}
+
+.inputWhite {
+	background-color: #fff;
+	outline-color: transparent;
+}
+
+.inputOutline {
+	background-color: transparent;
+	outline-color: var(--outline-hex);
+}
+
+/* sizes */
+.inputL {
+	font-size: 20px;
+	letter-spacing: calc(20px * -0.06);
+	padding: 20px;
+	border-radius: 12px;
+	outline-width: 2px;
+}
+
+.inputS {
+	font-size: 14px;
+	letter-spacing: calc(14px * -0.06);
+	padding: 12px;
+	border-radius: 4px;
+	outline-width: 1px;
+}
+
+.outlineNone {
+	outline: none;
+}
+
+.toggleIcon {
+	position: absolute;
+	font-size: 18px;
+	color: #8b8b8b;
+	cursor: pointer;
+	bottom: 12px;
+	right: 10px;
+	left: unset;
+}
+
+:global(.body-rtl) .toggleIcon {
+	left: 12px;
+	right: inherit;
+}
+
+@media (max-width: 576px) {
+	.inputL {
+		padding: 12px 20px;
+		font-size: 14px;
+		border-radius: 4px;
+	}
+
+	.toggleIcon {
+		bottom: 0px !important;
+	}
+
+	.error {
+		font-size: 10px;
+	}
+}

@@ -1,0 +1,148 @@
+.button {
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+	line-height: 100%;
+	transition: var(--transition);
+}
+
+.button:hover {
+	opacity: 0.5;
+}
+
+.disabledButton {
+	cursor: not-allowed;
+	pointer-events: none;
+	opacity: 0.6;
+}
+
+/* variants */
+
+.buttonBlack {
+	color: white;
+	background-color: black;
+}
+
+.buttonBlue {
+	color: white;
+	background-color: var(--primary-hex);
+}
+
+.buttonRed {
+	color: white;
+	background-color: var(--error-hex);
+}
+
+.buttonWhite {
+	color: black;
+	background-color: white;
+}
+
+.buttonLightBlue {
+	color: black;
+	background-color: var(--primary-light-hex);
+}
+
+.buttonOutline {
+	color: var(--primary-hex);
+	background-color: transparent;
+	outline: 1px solid var(--primary-hex);
+}
+
+/* sizes */
+
+.buttonXS {
+	font-size: 12px;
+	padding: 8px 18px;
+	letter-spacing: -0.72px;
+}
+
+.buttonS {
+	font-size: 16px;
+	padding: 12px 20px;
+	letter-spacing: -0.96px;
+}
+
+.buttonM {
+	font-size: 16px;
+	padding: 16px 20px;
+	letter-spacing: -0.96px;
+}
+
+.buttonL {
+	font-size: 20px;
+	padding: 22px 84px;
+	letter-spacing: -1.2px;
+}
+
+
+.loadWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	pointer-events: none;
+	width: 100%;
+}
+
+.loader {
+	color: #fff;
+	font-size: 5px;
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+	position: relative;
+	text-indent: -9999em;
+	animation: mulShdSpin 1.3s infinite linear;
+}
+
+@keyframes mulShdSpin {
+	0%,
+	100% {
+		box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em,
+			-3em 0 0 -1em, -2em -2em 0 0;
+	}
+
+	12.5% {
+		box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em,
+			-2em -2em 0 -1em;
+	}
+
+	25% {
+		box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em,
+			-2em -2em 0 -1em;
+	}
+
+	37.5% {
+		box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em,
+			-3em 0em 0 -1em, -2em -2em 0 -1em;
+	}
+
+	50% {
+		box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0,
+			-3em 0em 0 -1em, -2em -2em 0 -1em;
+	}
+
+	62.5% {
+		box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0,
+			-2em -2em 0 -1em;
+	}
+
+	75% {
+		box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0,
+			-3em 0em 0 0.2em, -2em -2em 0 0;
+	}
+
+	87.5% {
+		box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0,
+			-2em -2em 0 0.2em;
+	}
+}
+
+@media (max-width: 576px) {
+	.buttonL {
+		font-size: 16px;
+		padding: 12px 20px;
+		letter-spacing: -0.96px;
+	}
+}

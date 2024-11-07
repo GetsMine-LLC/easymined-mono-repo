@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "React Library",
+  "extends": "./base.json",
+  "compilerOptions": {
+
+    "jsx": "react-jsx",
+    "lib": ["ES2015", "ESNext", "dom", "dom.iterable"],
+    "target": "es5",
+    "allowJs": true,
+    "composite": false,
+    "skipLibCheck": true,
+    "strict": false,
+    "declaration": false,
+    "declarationMap": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "incremental": true,
+    "strictNullChecks": false,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+  }
+}

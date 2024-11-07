@@ -1,0 +1,48 @@
+{
+  "name": "@repo/shared",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    "./redux": {
+      "types": "./redux/index.ts",
+      "default": "./dist/redux.js"
+    },
+    "./providers": {
+      "types": "./providers/index.ts",
+      "default": "./dist/providers.js"
+    },
+    "./assets": {
+      "types": "./assets/index.ts",
+      "default": "./dist/assets.js"
+    }
+  },
+  "scripts": {
+    "lint": "eslint *.ts*",
+    "build": "rollup --config",
+    "dev": "pnpm build --watch"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "eslint": "^9.12.0",
+    "rollup": "^4.12.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "@rollup/plugin-image": "^3.0.3",
+    "@types/node": "20.16.0",
+    "cookies-next": "^4.3.0",
+    "localforage": "^1.10.0",
+    "next-redux-wrapper": "^8.1.0",
+    "react": "^18.2.0",
+    "react-redux": "^8.1.2",
+    "redux": "^5.0.1",
+    "redux-persist": "^6.0.0",
+    "rollup-plugin-asset-url": "^0.1.1",
+    "rollup-plugin-postcss": "^4.0.2"
+  }
+}

@@ -1,0 +1,45 @@
+.sideBarItem p {
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: -0.06rem;
+	font-size: 25px;
+}
+.submenu {
+	display: flex;
+	padding-left: 10px;
+	gap: 17px;
+	flex-direction: column;
+}
+.item {
+	font-size: 18px;
+	opacity: 0.6;
+	cursor: pointer;
+	letter-spacing: -0.06rem;
+	font-weight: 400;
+}
+.active {
+	color: var(--primary-hex);
+	font-weight: 600;
+	opacity: 1;
+}
+.topBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	gap: 30px;
+}
+.icon {
+	width: 24px;
+	height: 24px;
+	transform: rotate(90deg);
+}
+@media (max-width: 800px) {
+	.submenu {
+		padding-left: 0;
+	}
+	.sideBarItem {
+		display: flex;
+		align-items: center;
+	}
+}
